@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parayla Diploma - Göstermelik Diploma Satın Al</title>
+    <meta name="description"
+        content="Göstermelik veya e-devlet onaylı parayla diploma satın al. Ailenizi mutlu etmek ve kariyer fırsatlarını artırmak için en güvenilir çözüm. Taksitli ve garantili hizmet.">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://parayladiploma.online/">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4A148C;
+            --primary-light: #F3E5F5;
+            --secondary: #7B1FA2;
+            --bg-body: #FAFAFA;
+            --text-main: #212121;
+            --text-muted: #757575;
+            --white: #fff;
+            --btn-green: #25D366;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navbar */
+        nav {
+            background: var(--white);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+        }
+
+        .nav-logo {
+            font-size: 20px;
+            font-weight: 900;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-menu a {
+            font-weight: 500;
+            font-size: 14px;
+            color: var(--text-main);
+            transition: 0.2s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--secondary);
+        }
+
+        .btn-wa {
+            background: var(--btn-green);
+            color: var(--white) !important;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn-wa:hover {
+            background: #128C7E;
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        /* HeroSection */
+        .hero {
+            background: linear-gradient(135deg, var(--white) 0%, var(--primary-light) 100%);
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 900;
+            color: var(--text-main);
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .btn-main {
+            background: var(--primary);
+            color: var(--white);
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(74, 20, 140, 0.3);
+            transition: 0.3s;
+        }
+
+        .btn-main:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        /* Section Global */
+        .section-wrapper {
+            padding: 80px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .sec-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .sec-header h2 {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .sec-header p {
+            font-size: 16px;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Steps */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .step-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+            border-top: 4px solid var(--primary);
+        }
+
+        .step-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .step-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .step-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        /* Pricing Area */
+        .price-chart {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .plan {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 16px;
+            position: relative;
+            border: 1px solid #f0f0f0;
+            transition: 0.3s;
+        }
+
+        .plan:hover {
+            border-color: var(--secondary);
+            box-shadow: 0 10px 30px rgba(123, 31, 162, 0.1);
+        }
+
+        .plan-tag {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: var(--secondary);
+            color: var(--white);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .plan h3 {
+            font-size: 22px;
+            margin-bottom: 5px;
+            color: var(--text-main);
+        }
+
+        .plan-price {
+            font-size: 36px;
+            font-weight: 900;
+            color: var(--primary);
+            margin: 20px 0;
+        }
+
+        .plan-price small {
+            font-size: 16px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .plan-ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .plan-ul li {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .plan-ul li::before {
+            content: '✔';
+            color: var(--secondary);
+            font-weight: 900;
+        }
+
+        /* Fake Diploma Block */
+        .gostermelik-box {
+            margin-top: 30px;
+            background: #fff5e6;
+            border-radius: 12px;
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 5px solid #ff9800;
+        }
+
+        .gostermelik-info h3 {
+            margin: 0 0 10px 0;
+            color: #e65100;
+            font-size: 20px;
+        }
+
+        .gostermelik-info p {
+            margin: 0;
+            color: #555;
+            max-width: 600px;
+            font-size: 14px;
+        }
+
+        .g-price {
+            font-size: 32px;
+            font-weight: 900;
+            color: #e65100;
+        }
+
+        /* Info Content (previously SEO) */
+        .info-text {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 50px;
+            margin-top: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+        }
+
+        .info-text h2 {
+            color: var(--primary);
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        .info-text h3 {
+            color: var(--secondary);
+            font-size: 22px;
+            margin: 30px 0 15px;
+        }
+
+        .info-text p {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .info-text ul {
+            margin-left: 20px;
+            color: var(--text-muted);
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .info-text li {
+            margin-bottom: 8px;
+        }
+
+        /* Gallery Carousel Simulation */
+        .photo-gallery {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding-bottom: 20px;
+            snap-type: x mandatory;
+        }
+
+        .photo-gallery img {
+            height: 250px;
+            border-radius: 10px;
+            flex: 0 0 auto;
+            object-fit: cover;
+            border: 1px solid #eee;
+        }
+
+        /* Footer */
+        footer {
+            background: #E1BEE7;
+            color: var(--primary);
+            padding: 50px 5%;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        .disclaimer-alert {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            padding: 20px;
+            font-size: 12px;
+            line-height: 1.6;
+            color: #6A1B9A;
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                width: 100%;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background: var(--white);
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+                padding: 15px 0;
+            }
+
+            .nav-menu.active {
+                display: block;
+            }
+
+            .nav-menu ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .price-chart {
+                grid-template-columns: 1fr;
+            }
+
+            .info-text {
+                padding: 30px 20px;
+            }
+
+            .gostermelik-box {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">PARAYLA DİPLOMA</div>
+        <button class="hamburger" onclick="document.getElementById('m-menu').classList.toggle('active')">☰</button>
+        <div class="nav-menu" id="m-menu">
+            <ul>
+                <li><a href="#hizmetler">Hizmetlerimiz</a></li>
+                <li><a href="#fiyat">Fiyatlar Tablosu</a></li>
+                <li><a href="#detaylar">Sıkça Sorulanlar</a></li>
+                <li><a href="#nasil-alinir">Nasıl Alınır?</a></li>
+            </ul>
+        </div>
+        <a href="https://wa.me/905545924569" class="btn-wa">Mesaj Gönder</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Parayla Diploma Satın Al & <span>Kariyerinize Yatırım Yapın</span></h1>
+        <p>İş arayışınızda ya da sadece terfi süreçlerinde e-devlet onaylı diploma satın alma seçenekleri veya dekor
+            amaçlı göstermelik çözümler 7/24 hizmetinizde.</p>
+        <div class="hero-buttons">
+            <a href="https://wa.me/905545924569" class="btn-main">Sipariş Oluştur</a>
+            <a href="#fiyat" class="btn-main"
+                style="background:var(--white); color:var(--primary); border:2px solid var(--primary);">Paketleri
+                İncele</a>
+        </div>
+    </div>
+
+    <div class="section-wrapper" id="nasil-alinir">
+        <div class="sec-header">
+            <h2>Hızlı Danışmanlık ve Onay Süreci</h2>
+            <p>Onayınız olmadan, işlem başlamadan hiçbir kapıda veya elden ödeme talebi yapılmaz. Gizlilikle
+                adımlarımızı takip edin.</p>
+        </div>
+        <div class="steps-container">
+            <div class="step-card">
+                <div class="step-icon">💬</div>
+                <div class="step-title">İhtiyacınızı İletin</div>
+                <div class="step-desc">Göstermelik mi yoksa E-devlet onaylı mı? Üniversite ve bölümünüz nedir?</div>
+            </div>
+            <div class="step-card">
+                <div class="step-icon">📲</div>
+                <div class="step-title">Taslağınızı Onaylayın</div>
+                <div class="step-desc">WhatsApp'tan iletilen taslakta isim kontrollerinizi peşinatsız gerçekleştirin.
+                </div>
+            </div>
+            <div class="step-card">
+                <div class="step-icon">🏦</div>
+                <div class="step-title">Ön Ödeme Yapın</div>
+                <div class="step-desc">İşlemlerin resmileşmesi adına ön kayıt bedelini yatırarak komisyonsuz devam edin.
+                </div>
+            </div>
+            <div class="step-card">
+                <div class="step-icon">📦</div>
+                <div class="step-title">Teslimat & Taksit</div>
+                <div class="step-desc">Anonim kargonuz yola çıksın, kalan meblağı aylar içerisinde taksitle ödeyin.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-wrapper" id="fiyat"
+        style="background-color: var(--white); border-top: 1px solid #f0f0f0; border-bottom: 1px solid #f0f0f0;">
+        <div class="sec-header">
+            <h2>E-Devlet Onaylı Programlar ve Tutar Bilgisi</h2>
+            <p>Danışanlarımızın taksit kolaylığından faydalanabildiği şeffaf fiyat cetvelimiz şöyledir:</p>
+        </div>
+
+        <div class="price-chart">
+            <div class="plan">
+                <h3>Lise Mezuniyeti</h3>
+                <div class="plan-price">8.000 <small>TL</small></div>
+                <ul class="plan-ul">
+                    <li><strong style="color:var(--secondary); font-size:16px;">E-Devlet Onaylı (%100
+                            Garantili)</strong></li>
+                    <li>4000 TL Ön Ödeme</li>
+                    <li>Kalan İçin 1 Ay Taksit Vadesi</li>
+                    <li>Sistem Kaydı (Aktif Sorgulama)</li>
+                    <li>%100 Güvenlikli Gönderim</li>
+                    <li>Hızlı Hazırlık & Hologram</li>
+                </ul>
+                <a href="https://wa.me/905545924569" class="btn-main" style="display:block; text-align:center;">Satın
+                    Al</a>
+            </div>
+
+            <div class="plan" style="border: 2px solid var(--secondary);">
+                <div class="plan-tag">Önerilen</div>
+                <h3>Lisans Seçeneği</h3>
+                <div class="plan-price">15.000 <small>TL</small></div>
+                <ul class="plan-ul">
+                    <li><strong style="color:var(--secondary); font-size:16px;">E-Devlet Onaylı (%100
+                            Garantili)</strong></li>
+                    <li>4000 TL Ön Ödeme</li>
+                    <li>Kalan İçin 4 Ay Taksit Vadesi</li>
+                    <li>YÖK & E-Devlet Aktif Mezun</li>
+                    <li>Detaylı Transkript Sağlanması</li>
+                    <li>Noter ve Dış Kurum Teyidi</li>
+                </ul>
+                <a href="https://wa.me/905545924569" class="btn-main" style="display:block; text-align:center;">Satın
+                    Al</a>
+            </div>
+
+            <div class="plan">
+                <h3>Önlisans Tercihi</h3>
+                <div class="plan-price">12.000 <small>TL</small></div>
+                <ul class="plan-ul">
+                    <li><strong style="color:var(--secondary); font-size:16px;">E-Devlet Onaylı (%100
+                            Garantili)</strong></li>
+                    <li>4000 TL Ön Ödeme</li>
+                    <li>Kalan İçin 3 Ay Taksit Vadesi</li>
+                    <li>Sistem Kaydı Onaylı</li>
+                    <li>Önlisans Eğitim Transkripti</li>
+                    <li>Kargo Paketi Açılmadan Teslimat</li>
+                </ul>
+                <a href="https://wa.me/905545924569" class="btn-main" style="display:block; text-align:center;">Satın
+                    Al</a>
+            </div>
+        </div>
+
+        <div class="gostermelik-box">
+            <div class="gostermelik-info">
+                <h3>Sadece Fiziksel Maksatlı "Göstermelik Diploma"</h3>
+                <p>Oda duvarında çerçeveletmek, arkadaşlarınıza onurunuzu kanıtlamak ya da sadece mezuniyet gösterisi
+                    adına tasarlanan "kayıtsız" diploma hizmetimizdir. Matbaadan doğrudan size ulaşır.</p>
+            </div>
+            <div>
+                <div class="g-price">4.000 TL</div>
+                <a href="https://wa.me/905545924569" class="btn-main"
+                    style="background:#e65100; margin-top:15px; display:inline-block;">Bana Uyar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-wrapper" id="hizmetler">
+        <div class="sec-header">
+            <h2>İşlemleri Başarıyla Tamamlanan Basımlar</h2>
+            <p>Gerçeğinden farksız matbaa basımı, altın varaklı ve ıslak imzalı belgelerle kendinizi ayrıcalıklı
+                hissedin.</p>
+        </div>
+        <div class="photo-gallery">
+            <img src="compressed-images/diploma-4.jpg" alt="Parayla Üretilen Lisans Baskısı">
+            <img src="compressed-images/diploma-5.jpg" alt="Göstermelik Diploma Örneği Alım">
+            <img src="compressed-images/diploma-6.jpg" alt="Parayla E-devlet Diploma Görüntüsü">
+            <img src="compressed-images/diploma-7.jpg" alt="Lise Satılık Mezuniyet">
+            <img src="compressed-images/diploma-8.jpg" alt="Diploma Kağıt Detayı">
+            <img src="compressed-images/diploma-ornek.jpg" alt="Soğuk Mührü Olan Üniversite Diploması">
+            <img src="compressed-images/edevlet-onayi.jpg" alt="e Devlet Onayı Görüntüsü">
+        </div>
+    </div>
+
+    <div class="section-wrapper" id="detaylar" style="padding-top: 0;">
+        <div class="info-text">
+            <h2>Neden Parayla Diploma Satın Al Yolunu Seçiyoruz?</h2>
+            <p>Bireylerin aleyhine giderek zorlaşan eğitim imkanlarında <strong>parayla diploma satın al</strong> fikri
+                pratik bir destek kapısı sağlamaktadır. Lise ya da önlisans eğitimlerini maddi, ailesel sebeplerle veya
+                hastalık dolayısıyla tamamlayamayanlar, en azından toplumda mezun unvanını korumak için bu yola
+                başvurabilirler.</p>
+
+            <h3>Göstermelik Diploma ile E-Devlet Onaylı Arasındaki Ciddi Fark</h3>
+            <p>Bizden aldığınız hizmette tamamen sizin isteklerinize göre hareket edilir. Eğer asıl amacınız ailenizi
+                memnun etmek, mezuniyet sevinci yaşatmak ise <strong>göstermelik diploma satın al</strong> seçeneğini
+                (4.000 TL) tavsiye ederiz. Bu belge kurum ve İK departmanı kayıtlarında dijital olarak yer almaz, sadece
+                görseldir.</p>
+            <p>Ancak holding mülakatlarına giriyorsanız veya özel üniversite yüksek lisanslarına başvuruda
+                bulunuyorsanız; muhakkak ki e-devlet, MEB veya YÖK teyidi bulunan onaylı program paketlerini satın
+                almalısınız.</p>
+
+            <h3>Diploma Siparişi Sürecinde KVKK ve Teslimat Standartları</h3>
+            <p>Bizlere bildirdiğiniz T.C. Kimlik Numaranız hiçbir şekilde üçüncü kurumsal veritabanlarıyla (kayıt işlemi
+                haricinde) paylaşılmaz. <strong>Diploma satışı</strong> sonuçlanıp dosyanız teslim edildiğinde tüm
+                kimlikleriniz silinir. Anlaşmalı posta/kargo operasyonlarında kargonuz "özel gönderi" zarfında gelir,
+                içinde mezuniyet belgesi olduğu hiçbir görevli tarafından anlaşılamaz.</p>
+
+            <h3>Transkript Veriliyor mu?</h3>
+            <ul>
+                <li><strong>Göstermelik diplomalar</strong> özel ek talep içermediğinden ek döküm olmadan şık kapaklı
+                    tasarımla yollanır.</li>
+                <li><strong>Önlisans ve Lisans Diplomalarında</strong> size doğrudan transkript/not dökümü (genellikle 4
+                    yıllık/2 yıllık ortalamanız ile) standart şekilde birlikte takdim edilir. Böylece resmi idari
+                    işlerde pürüz olmadan işleminizi tamamlarsınız.</li>
+            </ul>
+
+            <p>Her kademede, size vakit kazandırmak ve görsel itibarınızı yükseltmek felsefesiyle yanınızdayız.</p>
+        </div>
+    </div>
+
+    <div class="section-wrapper" id="yorumlar">
+        <div class="sec-header">
+            <h2>Başarı Hikayeleri & Müşteri Yorumları</h2>
+            <p>Hayatında yeni bir sayfa açan ve hizmetlerimizden faydalanan danışanlarımızın tarafsız değerlendirmeleri.
+            </p>
+        </div>
+
+        <style>
+            .reviews-list {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 20px;
+            }
+
+            .review-item {
+                background: #fff;
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+                border-bottom: 5px solid var(--primary);
+            }
+
+            .r-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
+            }
+
+            .r-user {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .r-icon {
+                width: 45px;
+                height: 45px;
+                background: var(--primary-light);
+                color: var(--primary);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                font-weight: 800;
+            }
+
+            .r-info h4 {
+                margin: 0;
+                font-size: 16px;
+                color: var(--text-main);
+            }
+
+            .r-info span {
+                font-size: 12px;
+                color: var(--text-muted);
+            }
+
+            .r-rating {
+                color: #FFB300;
+                font-size: 16px;
+                letter-spacing: 2px;
+            }
+
+            .r-content {
+                font-size: 14.5px;
+                color: #444;
+                line-height: 1.6;
+            }
+
+            .r-warning {
+                font-size: 12px;
+                color: #C62828;
+                margin-top: 12px;
+                background: #FFEBEE;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: inline-block;
+            }
+        </style>
+
+        <div class="reviews-list">
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">M</div>
+                        <div class="r-info">
+                            <h4>Murat İ.</h4>
+                            <span>Göstermelik Diploma</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">Dükkanıma asmak için almıştım. Altın rengi yaldızlı baskısı var. Kaletesi cidden
+                    harika. Misafirlerim her gördüğünde hangi üniversite diye soruyor. Teşekkür ederim hızlı kargo için.
+                </div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">S</div>
+                        <div class="r-info">
+                            <h4>Semra Y.</h4>
+                            <span>Lise Paketi</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★☆</div>
+                </div>
+                <div class="r-content">E-devletten onaylı sistem mükemmel işliyor. Güvenemeyip sadece WhatsApp'tan
+                    yazmıştım önce. Aklımdaki yüzlerce soruya sabırla cevap verdiler. Sadece onay süreci 1 gün gecikti
+                    onu da baştan söylediler.</div>
+                <div class="r-warning">Sistemsel yoğunluk sebebiyle +1 iş günü gecikme.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">T</div>
+                        <div class="r-info">
+                            <h4>Tarık E.</h4>
+                            <span>Lisans Mezuniyeti</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">Yıllarca boş yere dert etmişim. Noter onayından bile geçti şaka gibi. Peşinat
+                    sonrası ilk taksitimi maaşımı çekince gönderdim. Her şey için sonsuz teşekkürler.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">E</div>
+                        <div class="r-info">
+                            <h4>Ebru A.</h4>
+                            <span>Önlisans Paketi</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">Açıköğretim sınavlarına girmek resmen işkenceydi. Direk 2 yıllık diplomamı aldım
+                    ve iş yerimdeki özlük dosyama koydum. E-devlette çıkması ayrı bir güven veriyor.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">Y</div>
+                        <div class="r-info">
+                            <h4>Yılmaz K.</h4>
+                            <span>Göstermelik Diploma</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">Sadece fotoğraf çekilmek ve aileye göstermek için en uygun yöntem bence bu.
+                    Taslağı atar atmaz onayladım 2 günde elime geçti. Her kuruşunu hak ediyorlar.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">B</div>
+                        <div class="r-info">
+                            <h4>Banu S.</h4>
+                            <span>Lisans Mezuniyeti</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">Çok uzun zamandır parayla diploma arayışım vardı ama etrafta dolandırıcı
+                    kaynıyor. Burası taslak göndermeden bir kuruş istemedi. Asıl güven veren kısımları bu bence.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">V</div>
+                        <div class="r-info">
+                            <h4>Volkan D.</h4>
+                            <span>Lise Paketi</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★☆</div>
+                </div>
+                <div class="r-content">Açık lise terk birisi olarak direkt diplomaya ulaştım. İş başvurularında direkt
+                    karekod okutuyorlar artık o yüzden E-devlet zorunluydu benim için. Kurye adresi bulamadığı için
+                    kargom 1 gün geç geldi.</div>
+                <div class="r-warning">PTT Kargo kaynaklı adres teslim gecikmesi.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">G</div>
+                        <div class="r-info">
+                            <h4>Gizem Ü.</h4>
+                            <span>Önlisans Paketi</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">O kadar temiz, o kadar kurumsal bir dil ile konuşuyorlar ki WhatsApp'ta. İçimde
+                    en ufak bir kuşku kalmadı. Gelen diplomada transkript bile dosya içindeydi. Mükemmel bir iş
+                    çıkardılar.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">U</div>
+                        <div class="r-info">
+                            <h4>Umut F.</h4>
+                            <span>Göstermelik Diploma</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">Yurtdışındaki teyzeme atmak için aldım o resim hastasıdır. E devlete zaten
+                    ihtiyacım yok. Renkleri baskısı harika duruyor çok şık bir kapla gönderdiler.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">C</div>
+                        <div class="r-info">
+                            <h4>Cansel M.</h4>
+                            <span>Lisans Mezuniyeti</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">İnanılmaz bir deneyim. Ödeme yapmadan önce bütün evraklarımı ve okulumu teyit
+                    ettiler onay verir vermez işleme aldılar 5. gün içerisinde elimdeydi herkese tavsiye ediyorum.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">K</div>
+                        <div class="r-info">
+                            <h4>Kerem G.</h4>
+                            <span>Lise Paketi</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">Bu yaşa geldim hala diploma derdim vardı sizin sayenizde bitti gitti.
+                    Çözülemeyecek bir dert gibi geliyordu şimdi gülüyorum kendi kendime.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">N</div>
+                        <div class="r-info">
+                            <h4>Nihat O.</h4>
+                            <span>Lisans Mezuniyeti</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">İş yerim benden aniden lisans diploması isteyince şoka girmiştim. Hızlı
+                    servisiniz hayat kurtardı diyebilirim. Transkriptle gelmesi artı bir güvelik yarattı firmamda.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">Ö</div>
+                        <div class="r-info">
+                            <h4>Özlem L.</h4>
+                            <span>Önlisans Paketi</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★☆</div>
+                </div>
+                <div class="r-content">Hizmet kalitesi çok yüksek, hiç kaba söz duymadım müşteri hizmetlerinde. Sadece
+                    PTT kargo çalışanı dosyayı kırıştırarak bırakmış elime o beni biraz üzdü ama belge sağlamdı.</div>
+                <div class="r-warning">Kargo şirketinden kaynaklı taşıma hatası tespit edildi.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">A</div>
+                        <div class="r-info">
+                            <h4>Ali Ş.</h4>
+                            <span>Lise Paketi</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">Baştan sona açık konuşulması en büyük artıları. Başka yerler gibi önce paranı
+                    alıp bloke etmiyorlar. Onaysız iş yok dediler harbiden dediklerini yaptılar sağolun.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">H</div>
+                        <div class="r-info">
+                            <h4>Hakan Ç.</h4>
+                            <span>Göstermelik Diploma</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">Piyasadaki diğer yerler göstermelik diploma için bile astronomik fiyatlar
+                    çekerken burası hem ekonomik hem de dürüst bir yol izliyor 4bin lira bedava bence bu kaliteye.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">S</div>
+                        <div class="r-info">
+                            <h4>Sinem K.</h4>
+                            <span>Lisans Mezuniyeti</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">Taksit avantajı muazzam bir şey. Kimse bir kerede 15 bin lira çıkarıp veremez o
+                    stresi atlatmak ve vade imkanı sunmaları harika. Ayrıca belge tam not.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">E</div>
+                        <div class="r-info">
+                            <h4>Ertuğrul Y.</h4>
+                            <span>Önlisans Paketi</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">Diplomanın üzerindeki soğuk basım mühür olayı çok profesyonel olmuş. Bu ayrıntıyı
+                    atlamamaları on numaralık iş. Yapan ustaların ellerine sağlık.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">D</div>
+                        <div class="r-info">
+                            <h4>Duygu B.</h4>
+                            <span>Lisans Mezuniyeti</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">Eğer dolandırılmaktan korkuyorsanız kesinlikle doğru yerdesiniz. Aylarımı çaldı
+                    başka platformlar. Keşke en başından buraya gelseydim. Şimdi E-devletime rahatça girip diplomamı
+                    görebiliyorum.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">M</div>
+                        <div class="r-info">
+                            <h4>Mehmet Can P.</h4>
+                            <span>Lise Paketi</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">Genç yaşta çalışmak zorunda kalmıştım okuyamadım. Özel güvenliğe başvuru için ilk
+                    olarak sizle tanıştım. Diplomamı aldım işimi de aldım.</div>
+            </div>
+
+            <div class="review-item">
+                <div class="r-top">
+                    <div class="r-user">
+                        <div class="r-icon">O</div>
+                        <div class="r-info">
+                            <h4>Orhan H.</h4>
+                            <span>Göstermelik Diploma</span>
+                        </div>
+                    </div>
+                    <div class="r-rating">★★★★★</div>
+                </div>
+                <div class="r-content">Baskı teknolojiniz inanılmaz. Herşeyi WhatsApp üstünden tık tık çözdük hiç bir
+                    belge ya da şifre vs vermeden işlemler tamamlandı. Gizliliğe verdiğiniz önem takdire şayan.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section-wrapper" style="padding-top: 0;">
+        <div class="info-text">
+            <h2>Kariyer Basamaklarını Hızla Tırmanmak: Başarının Gizli Anahtarı</h2>
+            <p>Hayatın hızla aktığı modern dünyada, potansiyelinizi gerçekleştirmek ve ailenize daha iyi bir yaşam
+                standardı sunabilmek için zamanla yarışırsınız. Pek çok kişi yeteneklerinin, el becerilerinin ve
+                sahadaki tecrübelerinin tek başına yeteceğini düşünse de, günün sonunda kurumsal şirketlerin masasında
+                oturan yöneticiler somut belgeler görmek isterler. Başarılarla dolu bir özgeçmiş bile tek bir eksik
+                nedeniyle reddedilebilir. İşte tam bu sebepten ötürü, birçok donanımlı insan kariyerini bir an önce
+                garanti altına alabilmek adına "<strong>diploma satın al</strong>" düşüncesine yönelir.</p>
+
+            <p>Geçmişe bakıldığında, eğitimini tamamlayamamış kişilere toplum tarafından çoğu zaman önyargıyla
+                yaklaşılırdı. Ancak bu önyargı artık teknolojinin ve uzman danışmanlık firmalarının sunduğu yenilikçi
+                çözümlerle aşılıyor. Yıllar boyunca, bir belge eksikliği yüzünden astlarının altında çalışmak zorunda
+                kalan veya lise mezuniyeti bulunmayanlar için "<strong>parayla diploma</strong>" sahip olunan imkanları
+                eşitlemek anlamına gelmektedir. Bu durum bir zaaf değil, sistemin dayattığı zorunluluklara akılcı bir
+                çözümdür.</p>
+
+            <h3>Dijital Onay Sistemleri: E-Devlet Entegrasyonunun Hayati Önemi</h3>
+            <p>Kurumsal dünyada güven her şey demektir. Güveni inşa eden en önemli unsur ise beyan ettiğiniz bilgilerin
+                resmi makamlarca doğrulanabilmesidir. Herhangi bir şirkete, kuruma ya da yurtdışı merkezli bir insan
+                kaynakları organizasyonuna başvuru yaptığınızda karşı tarafın ilk eylemi, belge doğrulama sistemlerini
+                kullanmaktır. Size sadece görseli güzel bir belge sunmak yerine, arkasında güçlü bir dijital altyapı
+                barındıran "<strong>e-devlet onaylı diploma</strong>" almanızı şiddetle tavsiye etmemizin temel nedeni
+                tam olarak budur.</p>
+
+            <p>Uzman kadromuzla "<strong>diploma al</strong>" sürecini başlattığınız an itibarıyla, seçtiğiniz okul ve
+                bölüme ait tüm verileriniz adım adım sisteme entegre edilir. Böylelikle belgenizin üzerinde yer alan QR
+                kodunu veya sisteme girilen diplomo numarasını okutan herhangi bir yetkili, sizin yıllar önce o bölümden
+                gerçekten mezun olduğunuzu kendi ekranında resmi olarak görür. Bir başka deyişle, yapacağınız
+                "<strong>diploma satın al</strong>" işlemi bir taklit değil, dijital uzayda mutlak doğruluğa sahip yasal
+                bir yansımadır.</p>
+
+            <h3>Ofisinizi veya Ailenizi Gururlandıracak Göstermelik Seçenekler</h3>
+            <p>İnsanların her zaman e-devlet doğrulama süreçleri gibi ağır beklentileri olmayabilir. Ticaretle
+                uğraşıyorsunuz, kendi dükkanınıza, kliniğinize veya danışmanlık merkezinize müşterilerinize güven
+                verecek bir mezuniyet belgesi asmak istiyorsunuz diyelim. Hiçbir dijital sorgulama gerektirmeyen bu gibi
+                durumlar için "<strong>göstermelik diploma</strong>" alternatifimiz devreye girer. Maliyeti oldukça
+                düşük olmasına rağmen görsel kalitesi itibariyle aslından 1 gram dahi farkı yoktur.</p>
+
+            <p>Bilhassa genç yaşta iş hayatına atılmış ancak ebeveynlerinin "Okulu bitiremedin" şeklindeki haklı
+                sitemlerine maruz kalanlar için de bu yöntem idealdir. Altın varaklı, üniversite rektörü imzalı ve
+                mühürlü bu "<strong>parayla diploma</strong>" şekli saygıyı da beraberinde getirir. Sonuç olarak, amaç
+                ister ticari itibar olsun ister ailevi bir mutluluk; bu prestijli kağıtlar işinizi kusursuz bir şekilde
+                görecektir.</p>
+
+            <h3>Diploma Parayla Almak: Gerçekçi Fırsatların Yeniden Değerlendirilmesi</h3>
+            <p>Pek çok insan için "<strong>diploma parayla almak</strong>" kelimeleri ilk başta yadırganabilir. Ancak
+                kapitalist iş döngüsü içinde saatlerini, hatta ömrünü asgari ücretli bir işte sadece vasıfsız görüldüğü
+                için heba eden binlerce beyin var. Siz bu sistemi eleştirmek yerine kendinizi bu sisteme en uygun
+                donanımla uyarlamalısınız. Yetenek zaten sizde var, eksik olan tek şey bir matbaa çıktısıysa; bunu temin
+                etmek neden yanlış olsun?</p>
+
+            <p>Bugün bir kariyer planlaması yapan veya terfi bekleyen her yetişkin, yatırımını en çok ihtiyacı olan
+                noktaya yapmalıdır. Eğitim hayatındaki eksikliğinizi yıllar süren ve size para kaybettirecek eğitim
+                serüvenlerine tekrar dönerek çözmek yerine, garantili paketlerle "<strong>diploma satın al</strong>"
+                işlemini gerçekleştirmek zamandan edilen muazzam bir tasarruftur.</p>
+
+            <h3>Profesyonelliğin ve Şeffaflığın Garantisi</h3>
+            <p>Güven duymakta zorlandığınızı, dolandırıcılardan çekindiğinizi çok iyi biliyoruz. Piyasada yer alan
+                yetkisiz ve onaysız "<strong>diploma parayla almak</strong>" sitelerinin aksine; bizler bir taslak
+                teyidi almadan, sizlere bölüm ve isim detaylarını doğrulatmadan hiçbir ödeme talep etmeyiz. Cüzzi bir ön
+                yükleme ile işlemi başlatır, e-devletinize düştüğü anı sizlere kanıtlar ve kalan tutarı taksitler
+                halinde sizden talep ederiz. Böyle bir dürüstlük ve ödeme kolaylığı, sektörün geri kalanında asla
+                bulunamayacak bir profesyonelliğin imzasıdır.</p>
+
+            <p>Belgenizin beraberinde detaylı bir genel not ortalaması (Transkript) çıkarılması konusunu da es
+                geçmiyoruz. "<strong>e-devlet onaylı diploma</strong>" teslimatınızın içinde, yıllarca aldığınız
+                derslerin, kredilerin ve staj notlarınızın harfiyen işlendiği orijinal dökümler de sizlere sunulur. Bu
+                dökümler sayesinde, İK sürecindeki tüm pürüzler sıfıra indirilmektedir.</p>
+
+            <h3>KVKK, Anonimlik ve Kusursuz Gizlilik</h3>
+            <p>Tüm bu başarılı operasyon boyunca kişisel verileriniz maksimum dikkatle saklanır. T.C. Kimlik numaranız,
+                adres bilgileriniz gibi kritik veriler "<strong>diploma al</strong>" süreçleri sona erip kargonuz
+                kapınıza ulaşana dek korunur ve sonrasında kalıcı bir biçimde veri merkezimizden yok edilir. Mahremiyet
+                bizim kırmızı çizgimizdir.</p>
+
+            <p>Hazırlanan dosyalar, özel isimlerle veya "Hediyelik Eşya / Baskı Dosyası" gibi kimsenin dikkatini
+                çekmeyecek naylon ambalajlar içerisinde doğrudan özel kuryeler aracılığıyla size iletilir. Sizi hiç
+                kimse bu konuda şüpheye düşürecek bir gönderiyle karşı karşıya bırakmaz.</p>
+
+            <h3>Yeni Mezuniyetinize ve Yeni Bir Hayata Hazır Mısınız?</h3>
+            <p>Yıllar boyunca elden kaçan fırsatların arkasından üzülme devri artık kapandı. Kendi kariyerinizi,
+                yeteneklerinizin hakkını veren "<strong>e-devlet onaylı diploma</strong>" ile yeni baştan yazın. Hiçbir
+                zaman geç değildir; "<strong>diploma satın al</strong>" kararınızı şimdi hayata geçirin. Profesyonel
+                müşteri hizmetlerimiz her türlü sorunuz için 7/24 WhatsApp hattı üzerinden size destek vermek,
+                endişelerinizi gidermek ve aklınızdaki her detayı aydınlatmak için bekliyor. Geleceğiniz bir satır
+                yazıya, "<strong>parayla diploma</strong>" satın alma prestijine bağlı; şimdi harekete geçin!</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-logo">PARAYLA DİPLOMA HİZMETLERİ</div>
+        <p style="margin-bottom: 20px;">Tüm danışmanlık faaliyetlerimiz hafta içi / haftasonu fark etmeksizin hızlıca
+            yanıtlanmaktadır.</p>
+        <a href="https://wa.me/905545924569" class="btn-main"
+            style="background:#25D366; display:inline-block; border-radius:30px;">WhatsApp: +90 554 592 45 69</a>
+        <br><br>
+        <div class="disclaimer-alert">
+            Disclaimer: The content presented on this website is part of an independent digital research initiative
+            aimed at understanding user engagement with diploma-related search queries and assessing societal
+            vulnerability to fraudulent online offerings. This platform does not facilitate, promote, or carry out the
+            sale of any academic credentials, diplomas, or certificates. All materials shown are for observational and
+            analytical purposes only. Users are strongly advised to remain vigilant against deceptive advertisements and
+            misleading search placements commonly used by online scammers.
+        </div>
+        <p style="margin-top:20px; font-size:13px; font-weight: 500;">Copyright © 2026 Diploma Platformu</p>
+    </footer>
+
+</body>
+
+</html>
